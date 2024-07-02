@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutations et brassages</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: azure;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: brown;
+            text-align: center;
+            animation: slideIn 1s ease-out;
+        }
+
+        p {
+            text-align: justify;
+            margin: 20px 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        ul li:hover {
+            background-color: #e0f7fa;
+            border-radius: 5px;
+            padding: 5px;
+            transform: scale(1.05);
+        }
+
+        .more-content {
+            display: none;
+        }
+
+        .button-link {
+            display: inline-block;
+            padding: 0.5px 3px;
+            margin: 0.5px 0;
+            font-size: 1.1em;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+
+        }
+
+        .button-link:hover {
+            background-color: #0056b3;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Les mutations intervenues dans le royaume de Nikki de sa naissance à nos jours</h2>
+        <p>
+            Cela a commencé avec l'offre qu'avait faite Mansa Doro au chef de terre Baatonou de veiller sur les membres de sa communauté. Celui-ci ayant refusé, il a choisi Séro qui devenu "Sounon Séro" (roi Séro en Bariba) ou chef Séro. Son fils Simé, fondateur de Nikki, a participé à la gestion efficace de cet empire.
+        </p>
+        <button class="button-link" onclick="showMore()">Voir plus</button>
+        <div id="moreContent" class="more-content">
+            <p>
+                Pour imposer son autorité, il imposa à ses sujets Boko un certain nombre d'impôts. Et chaque part d'impôt libérée par un sujet était systématiquement contrôlée par lui, qui pouvait apprécier la quantité et selon le cas, exiger sa revue à la hausse traduite par l'anathème : "Dodialô" qui signifie en Boo "ajoutes-en-un".D'où son nom de Simé Dodia, "Simé ajoute encore un".
+            </p>
+            <p>
+                Au fil du temps, à la faveur d'une bonne cohabitation et d'un bon brassage, le baatonou a, sans contrainte, rejoint le wassangari pour se mettre à son service. C'est à partir de là que le nom Sounon Boko (chef Boko) a pris la forme de Sina Boko (chefferie supérieure).
+            </p>
+            <p>
+                De toute leur existence, il n'est jamais survenu quelque affrontement entre les deux groupes étrangers wassangari et autochtone Baatombou. De tout temps, il existe entre eux une parenté de plaisanterie. Ainsi, les enfants issus de Sounon Séro qui est boo et de ses femmes baatombou peuvent se taquiner avec les enfants de leurs oncles maternels " enfant de garçon et enfant de femme". Ils peuvent se traiter de tout : esclave, vaurien … mais sous le strict couvert de la plaisanterie.
+            </p>
+            <p>
+                Au barou tem, il y a existé ces deux institutions distinctes jusqu'à nos jours. Mais, il est de plus en plus observé aujourd'hui une propension de remise en cause de cet ordre social anciennement établi de la part du baatonou qui, niant ainsi son identité originelle, veut se faire appeler "wassangari". Il y a la chefferie baatonou( chefferie de terre) et la royauté wassangari, descendance de Kissira, qui n'est pas baatonou, certains documents comme le livre de Bernard Passot, aux archives du musée ethnographique de Ouando à Porto-Novo tente d'apporter toute la lumière nécessaire sur la culture bariba. " Les bariba au baatombou (singulier baatonou) ou encore baa tomba (les hommes) comme ils se désignent eux-même, sont organisés en classe sociale qui reflètent leurs diverses origines.
+            </p>
+            <p>
+                La paisible vie menée avec les bariba n'a pas empêchée le royaume de Nikki et surtout les peuples bariba de Nikki de mener certaines guerres en vue d'agrandir leur royaume. Jusqu'à l'arrivée des européens en 1895, la tradition assure que 28 souverains se sont succédé sur le trône de Nikki. Mais avant le milieu du 19è siècle, leur histoire est mal connue. Elle est marquée par des luttes intestines entre les branches princières et les chefferies.
+            </p>
+            <p>
+                Cependant, pour agrandir ou le défendre, les Rois bariba de Nikki eurent notamment à lutter contre :
+            </p>
+            <ul>
+                <li>Les Dendi venus du Niger et qui envahirent le Nord du Borgou jusqu'à Bembérékê sous le Roi Bagiri, vers 1553.</li>
+                <li>Les Gourmantché de Gourma.</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function showMore() {
+            var moreContent = document.getElementById("moreContent");
+            var button = document.querySelector(".button-link");
+            if (moreContent.style.display === "none") {
+                moreContent.style.display = "block";
+                button.textContent = "Voir moins";
+            } else {
+                moreContent.style.display = "none";
+                button.textContent = "Voir plus";
+            }
+        }
+
+        // Initialize the more-content section to be hidden
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("moreContent").style.display = "none";
+        });
+    </script>
+</body>
+</html>

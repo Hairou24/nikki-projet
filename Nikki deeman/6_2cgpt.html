@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Stylisation du corps de la page */
+        body {
+            background-image: url('a.jpg');
+
+            background-size: cover;
+            text-align: center;
+            font-size: 30px;
+            margin: 2px;
+            padding: 3px;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Stylisation du titre principal */
+        h1 {
+            text-align: center;
+            background-color: coral;
+            color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Stylisation du sous-titre */
+        h2 {
+            color: blueviolet;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        /* Stylisation de la navigation */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto;
+            background-color: aliceblue;
+            border-radius: 20px;
+            overflow: hidden;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+
+        nav ul li a:active {
+            background-color: #555;
+            color: white;
+        }
+
+        /* Réglages de la taille et de l'alignement */
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                text-align: center;
+            }
+
+            nav ul {
+                width: 100%;
+            }
+
+            body {
+                font-size: 24px;
+            }
+        }
+
+        /* Style pour le contenu supplémentaire */
+        #more-content {
+            display: none;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Style pour le bouton "Voir plus" */
+        #more-button {
+            background-color: coral;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+
+        #more-button:hover {
+            background-color: #ff7f50;
+        }
+    </style>
+</head>
+<body>
+    <h2>1- La Gaani </h2>
+
+    <p>
+        Lors de la Gaani proprement dite, le chef des griots Bara Sounon annonce la sortie du Roi. Quand le Roi sort du palais sur son chéval, il va chez l'Imam qui fait la prière. <br><br>
+        Ensuite, il va au site de to gnankaroubakarou " le grand tas d'ordures" où l'on fait des sacrifices. Avant d'aller à la guerre, le Roi fait des sacrifices là-bas. <br><br>
+    </p>
+    <p>
+        Après, c'est Dakitou où se trouvent les tombes de SiméDodia et de sa sœur BakéSika qui auraient disparu miraculeusement après l'annonce de la défaite d'une bataille. <br><br>
+        Il va ensuite au palais royal de Danri pour saluer ses frères. Après ces salutations, il va saluer les tambours sacrés avant d'entrer au palais. Il se débarbouille et après s'asseoit dans la case ronde (sako) pour voir le défilé des princes et des dignitaires qui se présentent aux tambours sacrés à qui ils font des offrandes.
+        Le premier à se présenter est le Roi de Nikki suivi de sa sœur, Gnon Kogui.
+        Suit le Roi de Bouè de la commune de Bembèrèkè. Suit ensuite le Roi de Kika dans la commune de Tchaourou et celui de Sandilo. Après le passage de ces rois, suivent ceux des rois des royaumes wassangari voisins et des hauts dignitaires du palais.
+        <br><br>
+    </p>
+    <p>
+        <button id="more-button" onclick="showMore()">Voir plus</button>
+    </p>
+    <div id="more-content">
+        <p>
+            Lors de la Gaani, si le Roi de Nikki est indisposé, c'est soit roi de Bouè, ou celui de Kika ou encore celui de Sandilo qui ont l'habileté de le remplacer pour les rituels. Cela est dû au fait que ces royaumes ont été fondés par les frères du fondateur du royaume de Nikki (Ils sont appelés les SINA WONONBU).
+        </p>
+        <h2>II - La Kayessi</h2>
+        <p>
+            Lors de la Kayessi, on coiffe les princes et les princesses pour leur donner un nom. La cérémonie de rasage est une sorte de baptême traditionnel. C'est la princesse Gnon Kogui, la sœur du Roi qui parraine la séance de rasage. Elle a son palais et c'est elle qui détient le couteau qui sert à raser. Les Raseurs sont appelés Wanzan.
+            C'est à la couleur de la peau et au caractère de l'enfant qu'on lui donne son nom. Ces noms sont réservés seulement aux wassangari. Pour les garçons, ce sont : Simé, Yarou, Dafia, Gounou, Mora, Kora, Séro, Saka … Pour les filles, il y a kpagnéro, Gnanki, Manou, Gaunigui (femme claire), Bèkègui, Gariya, Gniré …
+            La cérémonie de rasage peut avoir lieu lors des cérémonies foraines de rasage.
+        </p>
+        <p>
+            Le jour de la Kayessi, les différents Rois et les dignitaires viennent saluer le Roi de Nikki. Il y a plusieurs manières de saluer le Roi : <br>
+            - il y en a qui rampent d'abord 3 fois avant de se coucher complètement ; <br>
+            - d'autres s'accroupissent ; <br>
+            - certains lui donnent dos ; <br>
+            - pour le saluer, le chef des peulh reste debout. <br>
+            - Le ministre de la défense, Sounon Tooto, le salue en pointant une flèche dans la direction du Roi. Une personne s'interpose entre eux en offrant son corps pour défendre celui du Roi. <br>
+            Après la cérémonie de salutations, c'est la fête dans toute la ville.
+        </p>
+        <h3>Photos et vidéos de la célébration de la gaani</h3>
+        <img src="tambours.jpg" alt="Tambours sacrés">
+        <p>Les tambours sacrés de la cour royale de Nikki</p>
+        <img src="ch1.jpg" alt="Chevaliers">
+        <p>GAANI 2024: Deux chevaliers dur l'arène de la course</p>
+        <img src="ch2.jpg" alt="Chevalier">
+        <p>GAANI 2024: Un chevalier en pleine course</p>
+        <img src="ch3.jpg" alt="Parades">
+        <p>Un chevalier en pleine parade à la cour royale</p>
+        <img src="kankangui.jpg" alt="Griots">
+        <p>Des griots en train de faire l'éloge du roi avec les trompettes</p>
+        <img src="sinadounwirou.jpg" alt="Premier ministre">
+        <p>Premier ministre "SINA DOUNWIRU" à la cour royale</p>
+        <img src="sina.jpg" alt="cheval">
+        <p>Le premier ministre sur son cheval pour le parcours des lieux sacrés</p>
+        <img src="le-royaume-de-nikki-au-benin-05.jpg" alt="pas de danses">
+        <p>Le cheval répondant aux pas de danse du gongonier</p>
+    </div>
+    <script>
+        function showMore() {
+            var moreContent = document.getElementById("more-content");
+            var moreButton = document.getElementById("more-button");
+            if (moreContent.style.display === "none") {
+                moreContent.style.display = "block";
+                moreButton.innerHTML = "Voir moins";
+            } else {
+                moreContent.style.display = "none";
+                moreButton.innerHTML = "Voir plus";
+            }
+        }
+    </script>
+</body>
+</html>

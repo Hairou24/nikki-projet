@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisation Politique</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h3 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-out;
+        }
+
+        p {
+            margin: 15px 0;
+            text-align: justify;
+            background: #e7f3fe;
+            padding: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        p.highlight {
+            background-color: #d2691e;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            animation: highlightFadeIn 1.5s ease-in-out;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        ul li {
+            background: #e7f3fe;
+            margin: 10px 0;
+            padding: 10px;
+            border-left: 4px solid #3498db;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        ul li:hover {
+            background-color: #d6eaf8;
+            transform: scale(1.05);
+        }
+
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            font-size: 1.1em;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .button-link:hover {
+            background-color: #0056b3;
+        }
+
+        .more-content {
+            display: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes highlightFadeIn {
+            from {
+                background-color: #ffb74d;
+                color: #fff;
+            }
+            to {
+                background-color: #d2691e;
+                color: #fff;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Le royaume de Nikki à l'instar de certains royaumes africains est dirigé par un souverain qui dispose d'un pouvoir non absolu. De ce fait, il se fait aider dans sa tâche par d'autres personnalités et institutions.</p>
+        <p class="highlight">Tout au sommet de Nikki se trouve le roi qui est choisi parmi la première classe sociale du royaume, la classe noble, celle des Wassangari qui se compose de quatre principales dynasties. Le roi doit être une personne âgée (le roi est recherché pour son expérience de la vie) ayant une barbe qui incarne la sagesse. Le pouvoir qu’il détient fait de lui un être sage, puissant, spirituel et respecté comme tel.</p>
+        <p>Sous le roi on retrouve environ une demi-douzaine de chefs de terre choisis par les autochtones, les Bariba. Le sina dunwiru (sina = tête, dunwiru = tête du cheval) qui joue le rôle de premier ministre en fait partie.</p>
+        <button class="button-link" onclick="showMore()">Voir plus</button>
+        <div id="moreContent" class="more-content">
+            <p>Viennent ensuite une douzaine de chefs dont celui qui s’occupe des champs (agriculture), le chargé des tambours sacrés, des cultes, de la restauration, de l’identification de la dynastie qui doit prendre le pouvoir… les chefs qui jouent un rôle important à la cour de Nikki ou dans le fonctionnement administratif, social, religieux du royaume se distinguent par des turbans sur leur tête.</p>
+            <p>On compte également une demi-douzaine de compagnons du roi. Ces derniers s’occupent du crachoir du roi, son cola, son habillement...</p>
+            <p>Le roi s’adresse à ses visiteurs par ses compagnons interposés qui ne le quittent pas de la journée.</p>
+            <p>Plusieurs serviteurs, dont les gando, contribuent à l’entretien et à divers travaux quotidiens à la cour de Nikki. A ces trois principales classes citées ci-dessus (wassangari, bariba, gando), il faut ajouter les étrangers dont les Peulh. Si les Wassangari sont réputés pour leur sens de gestion du pouvoir ou réputés pour être de formidables cavaliers, les Bariba, eux, sont de courageux cultivateurs, de redoutables chasseurs. Les Peulh, quant à eux, sont des éleveurs, des gens de la brousse. Ces derniers, pour faire manger leurs animaux, sont obligés de se déplacer au gré des saisons ou de vivre continuellement dans la brousse ou l’herbe est abondante. Ce mode de vie leur confère une grande connaissance de la nature et de toutes ses composantes.</p>
+        </div>
+        <h3>Activités principales</h3>
+        <p>Les principales activités à Nikki sont donc l’agriculture, la chasse, l’artisanat, l’élevage mais aussi la cueillette et le commerce. La majeure partie de la population est composée des Bariba même si le pouvoir est détenu par les Wassangari. Nikki n’est pas un grand carrefour commercial ou un important pôle d’échanges. Les rois sortaient très peu et n’entretenaient pas de grandes relations avec leurs homologues si ce n’était pour rendre visite à quelques parents à l’est, du côté du Nigéria.</p>
+    </div>
+    <script>
+        function showMore() {
+            var moreContent = document.getElementById("moreContent");
+            var button = document.querySelector(".button-link");
+            if (moreContent.style.display === "none") {
+                moreContent.style.display = "block";
+                button.textContent = "Voir moins";
+            } else {
+                moreContent.style.display = "none";
+                button.textContent = "Voir plus";
+            }
+        }
+
+        // Initialize the more-content section to be hidden
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("moreContent").style.display = "none";
+        });
+    </script>
+</body>
+</html>

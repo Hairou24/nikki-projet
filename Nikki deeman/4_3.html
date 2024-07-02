@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noms des rois de Nikki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        p {
+            background-color: aquamarine;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Noms des rois de Nikki</h1>
+    <div id="rois-container">
+        <!-- Ici sera ajouté dynamiquement le contenu -->
+    </div>
+
+    <script>
+        // Liste des noms des rois
+        const nomsDesRois = [
+            "Simin Dobidia",
+            "Séro Baguiri (Sannon Karawé)",
+            "Kpé-Gounou I (Kaba Wouko)",
+            "Séro Kpéra I (Barusobé Kpounon)",
+            "Kpé-Lafia I (Gamba Souanrou)",
+            "Séro Kora I (Bakarou Tokobou)",
+            "Séro Gbetete Tossou (Gounnourou Kponon)",
+            "Kpé-Soumèra II (Gounnourougui)",
+            "Sero Tassou I",
+            "Sere Torou I (Gonnnourou Gouro)",
+            "Sabi Kpassi",
+            "KPE Souméra II",
+            "Kpé-Soumèra III",
+            "Sabi Nayina I (Gannonkpunon)",
+            "Séro bakiri II",
+            "Kpé-Gounou I (Giri Boussougué)",
+            "SERO Kpera (Illorin kpunnon)",
+            "KPE Soumeira (Nin Gouroumin Kunnon)",
+            "KPE Gounou Boubari",
+            "SERO Kpera Darou-Kpara (Gninmaré Kpounnon)",
+            "KPE Lafia 2 (SERO SUYA)",
+            "Sero Kora (GBASSO GUI)",
+            "KPE Souméra boko",
+            "SÉRO Tassou (Bassa Kpunnon)",
+            "Sero Torou Wonko",
+            "Souméra Kondé ou (Simé Kondé)",
+            "SERO TOROU SOUANROU",
+            "SERO KORA (SABI PROUKA) (IDJASSÉ KPUNNON)",
+            "Sabi Naïna (Bannonssa KPUNNON)",
+            "SERO TOROU TOUKOU",
+            "SERO KPERA (BOUROU-GUI)",
+            "KPE GOUNOU (Kaba Wouko)",
+            "KPE Gounou Sabi Yérima",
+            "KPE Lafia III (SERO Mamoudou)",
+            "SERO Kpera (Ouenra-gui)",
+            "Sero Tassou (Issa)",
+            "Sero Kora III",
+            "Sabi Naïna III",
+            "Séro Torou Touko Sari",
+            "Bagri Abou Lafia (Sero Torou)"
+        ];
+
+        // Récupérer le conteneur
+        const roisContainer = document.getElementById('rois-container');
+
+        // Fonction pour afficher les noms à tour de rôle
+        function afficherNomsAvecDelai() {
+            let index = 0;
+            setInterval(() => {
+                if (index < nomsDesRois.length) {
+                    const nomRoi = nomsDesRois[index];
+                    const nouveauParagraphe = document.createElement('p');
+                    nouveauParagraphe.textContent = nomRoi;
+                    roisContainer.appendChild(nouveauParagraphe);
+                    index++;
+                }
+            }, 1000); // Interval en millisecondes (1000ms = 1 seconde)
+        }
+
+        // Appeler la fonction pour démarrer l'affichage
+        afficherNomsAvecDelai();
+    </script>
+</body>
+</html>

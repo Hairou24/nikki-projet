@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styl.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LE ROYAUME DE NIKKI</title>
+    <style>
+        /* Stylisation du corps de la page */
+        body {
+            background-image: url('Nikki.png');
+            background-size: cover;
+            text-align: center;
+            font-size: 30px;
+            margin: 2px;
+            padding: 3px;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Stylisation du titre principal */
+        h1 {
+            text-align: center;
+            background-color: coral;
+            color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 1px rgba(0, 0, 0, 0.2);
+            animation: zoomIn 1s ease-out;
+        }
+
+        /* Animation pour le titre principal */
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Stylisation du sous-titre */
+        h2 {
+            color: aqua;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            animation: fadeIn 2s ease-in;
+        }
+
+        /* Animation pour le sous-titre */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Stylisation de la navigation */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto;
+            background-color: aliceblue;
+            border-radius: 20px;
+            overflow: hidden;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul li {
+            display: inline-block;
+        }
+
+        nav ul li a {
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #ddd;
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        nav ul li a:active {
+            background-color: #555;
+            color: white;
+        }
+
+        /* Réglages de la taille et de l'alignement */
+        @media (max-width: 600px) {
+            nav ul li {
+                display: block;
+                text-align: center;
+            }
+
+            nav ul {
+                width: 100%;
+            }
+
+            body {
+                font-size: 24px;
+            }
+        }
+        h1 {
+    text-align: center;
+    background-color: coral;
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: zoomIn 1s ease-out, rotate 4s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <h1>SOYEZ LES BIENVENUS</h1>
+    <h2>BIENVENUE SUR LA PAGE WEB <br>. VOUS AUREZ ICI TOUTE L'HISTOIRE D'UN PEUPLE : CELUI DU PEUPLE WASSANGARI DU BENIN</h2>
+    <nav>
+        <ul>
+            <li><a href="1.html">Accueil</a></li>
+            <li><a href="2.html">Origines</a></li>
+            <li><a href="3.html">Organisation</a></li>
+            <li><a href="4.html">Dynasties</a></li>
+            <li><a href="5.html">Successions royales</a></li>
+            <li><a href="6.html">LA GAANI</a></li>
+            <li><a href="9.html">Cartes des zones des wassangari</a></li>
+            <li><a href="7.html">Conclusion</a></li>
+            <li><a href="form.html">A PROPOS DE NOUS</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <style>
+        /* Styles CSS ici */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: coral;
+            color: white;
+            padding: 10px;
+            margin: -20px -20px 20px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: bounceIn 1s ease-in-out;
+        }
+
+        p {
+            margin: 20px 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: zoomIn 1.5s ease-in-out;
+        }
+
+        .caption {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .intro-text {
+            font-size: 1.2em;
+            text-align: justify;
+            color: #555;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounceIn {
+            0%, 20%, 40%, 60%, 80%, 100% {
+                transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            }
+            0% {
+                opacity: 0;
+                transform: scale3d(.3, .3, .3);
+            }
+            20% {
+                transform: scale3d(1.1, 1.1, 1.1);
+            }
+            40% {
+                transform: scale3d(.9, .9, .9);
+            }
+            60% {
+                opacity: 1;
+                transform: scale3d(1.03, 1.03, 1.03);
+            }
+            80% {
+                transform: scale3d(.97, .97, .97);
+            }
+            100% {
+                opacity: 1;
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenus</h1>
+    <div class="container">
+        <p class="intro-text">
+            Nikki est une ville historiquement et culturellement attirante, elle vaut vraiment la peine d'être visitée. <br><br>Des éléments de curiosité mais aussi des reliques charrient la riche historique d'un peuple chaleureux, nous avons par exemple la grande cour impériale en cours de construction à Danri (Quartier de Nikki), les lieux sacrés et aussi le grand marché Taki Sari de Nikki sans surtout oublier la fête identitaire wassangari, etc…<br><br>Nikki est une cité royale et un modèle de civilisation poussant la curiosité pour ceux qui en ont entendu parler parmi tant d'autres.
+        </p>
+        <img src="nikki.jpg" alt="Photos de Nikki">
+        <p class="caption">Quelques photos de vue globale sur Nikki</p>
+    </div>
+</body>
+</html>

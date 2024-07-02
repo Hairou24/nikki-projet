@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORIGINES</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: azure;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: brown;
+            text-align: center;
+            animation: slideIn 1s ease-out;
+        }
+
+        p {
+            text-align: justify;
+            margin: 20px 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .more-content {
+            display: none;
+        }
+
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            font-size: 1.1em;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .button-link:hover {
+            background-color: #0056b3;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Origine du Royaume de Nikki</h2>
+        <p>
+            Voici un aperçu de l'origine du Royaume de Nikki, riche en histoire et en culture.
+        </p>
+        <button class="button-link" onclick="showMore()">Voir plus</button>
+        <div id="moreContent" class="more-content">
+            <p>
+                Le Royaume de Nikki trouve ses origines dans les anciennes traditions et histoires transmises de génération en génération. Mansa Doro a joué un rôle crucial en choisissant Séro pour diriger la communauté après le refus du chef de terre Baatonou. Séro est devenu Sounon Séro, et son fils Simé a fondé Nikki, renforçant l'empire avec des pratiques fiscales et des rituels uniques.
+            </p>
+            <p>
+                Au fil du temps, les relations entre les Baatonou et les Wassangari se sont harmonisées, créant une société où les plaisanteries et les taquineries étaient courantes entre les membres des deux groupes. Les enfants de Sounon Séro et de ses épouses baatonou entretenaient des relations fraternelles avec leurs oncles maternels, illustrant la cohabitation pacifique et la parenté de plaisanterie.
+            </p>
+            <!-- Ajouter d'autres sections de contenu ici -->
+        </div>
+    </div>
+    <script>
+        function showMore() {
+            var moreContent = document.getElementById("moreContent");
+            var button = document.querySelector(".button-link");
+            if (moreContent.style.display === "none") {
+                moreContent.style.display = "block";
+                button.textContent = "Voir moins";
+            } else {
+                moreContent.style.display = "none";
+                button.textContent = "Voir plus";
+            }
+        }
+
+        // Initialize the more-content section to be hidden
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("moreContent").style.display = "none";
+        });
+    </script>
+</body>
+</html>

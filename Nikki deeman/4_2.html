@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nommage des rois</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            animation: slideIn 1s ease-out;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        p {
+            text-align: justify;
+            background-color: #e7f3fe;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            background-color: #d6eaf8;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: #c0392b;
+        }
+
+        .dynasty {
+            margin-bottom: 30px;
+        }
+
+        .dynasty ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .dynasty li {
+            background-color: #e7f3fe;
+            padding: 10px;
+            border-left: 4px solid #3498db;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .dynasty li:hover {
+            background-color: #d6eaf8;
+            transform: scale(1.05);
+        }
+
+        .show-more {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .show-more button {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .show-more button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="highlight">
+            Comme cité ci-dessus, le trône de Nikki est hérité par 05 dynasties. D'abord, chaque dynastie est constituée des <strong>Kpaï</strong> (les pères) et des <strong>Wouré</strong> (les fils). Le premier Wassangari ayant siégé à Nikki étant Simé Dobidia, il est un Kpaï et tous ses fils sont des Wouré. Les fils des Wouré sont des Kpaï et ainsi de suite. Ainsi, nous pouvons remarquer que tout grand-père est de la même dynastie que ses petits-fils.
+        </p>
+        <p class="highlight">
+            En effet, c'est en fonction de ce nommage et de la dynastie qu'on nomme les rois.
+        </p>
+
+        <div class="dynasty">
+            <h1>Dynastie des DAFFIAROU</h1>
+            <nav>
+                <ul>
+                    <li>Les descendants ayant accès au trône de Nikki et étant des Kpaï sont appelés <strong>SABI NAÏNA</strong>. Quant aux Wouré de cette dynastie ayant accès au fauteuil royal, on les nomme <strong>KPE LAFIA</strong>.</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="dynasty hidden">
+            <h1>Dynastie des SANNE KARAWÉ</h1>
+            <nav>
+                <ul>
+                    <li>Les descendants ayant accès au trône de Nikki sont tous appelés les <strong>SÉRO BAKIRI</strong>.</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="dynasty hidden">
+            <h1>Dynastie des MAKARAROU</h1>
+            <nav>
+                <ul>
+                    <li>Les descendants ayant accès au trône de Nikki et étant des Kpaï sont appelés <strong>SERO TOROU</strong>. Quant aux Wouré de cette dynastie ayant accès au fauteuil royal, on les nomme <strong>SERO KPERA</strong>.</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="dynasty hidden">
+            <h1>Dynastie des GBASI MAKO</h1>
+            <nav>
+                <ul>
+                    <li>Les descendants ayant accès au trône de Nikki et étant des Kpaï sont appelés <strong>SERO TASSOU</strong>. Quant aux Wouré de cette dynastie ayant accès au fauteuil royal, on les nomme <strong>KPEGOUNOU</strong>.</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="dynasty hidden">
+            <h1>Dynastie des KORAROU</h1>
+            <nav>
+                <ul>
+                    <li>Les descendants ayant accès au trône de Nikki et étant des Kpaï sont appelés <strong>KPE SOUMEIRA</strong>. Quant aux Wouré de cette dynastie ayant accès au fauteuil royal, on les nomme <strong>SERO KORA</strong>.</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="show-more">
+            <button onclick="showMore()">Voir Plus</button>
+        </div>
+    </div>
+
+    <script>
+        function showMore() {
+            var hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach(function(element) {
+                element.classList.remove('hidden');
+            });
+            document.querySelector('.show-more').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

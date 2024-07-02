@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Election</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h3 {
+            color: blanchedalmond;
+            font-size: 2em;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-out;
+            background-color: #0056b3;
+        }
+        p {
+            margin: 20px 0;
+            font-size: 1.1em;
+            text-align: justify;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        ul {
+            list-style-type: square;
+            margin-left: 40px;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .more-content {
+            display: none;
+        }
+        .button-link {
+            display: inline-block;
+            padding: 0.5px 3px;
+            margin: 0.5px 0;
+            font-size: 1.1em;
+            color: white;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .button-link:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Comment se fait l'élection du Roi ?</h3>
+        <p>Un collège électoral établi, définit les critères :</p>
+        <ul>
+            <li>Le premier critère considéré est l'appartenance à la dynastie qui doit régner ;</li>
+            <li>Avoir une barbe qui est signe de sagesse ;</li>
+            <li>Ne pas avoir de scarifications ;</li>
+            <li>Avoir été fils ou petit-fils d'un Roi ;</li>
+            <li>Avoir été rasé à la Gaani et avoir reçu un nom de prince ;</li>
+            <li>Être possesseur des étriers de cuivre et avoir donc un statut familial élevé ;</li>
+            <li>Enfin, être orphelin de mère, ce décès étant indispensable pour que l'on soit considéré comme adulte.</li>
+        </ul>
+        <button class="button-link" onclick="showMore()">Voir plus</button>
+        <div id="moreContent" class="more-content">
+            <p>Généralement, le Roi choisi a au-delà de 70 ans. Le Roi de Nikki est intronisé sur les tombes de Séro et de ses deux sœurs Gnon Doué et Bona Doué à Ouénou. Le rituel d'intronisation se fait toujours en Boko.</p>
+            <p>Il existe deux palais royaux. Celui de Danri, malgré qu'il soit transformé en musée historique, sert de demeure au Roi de la dynastie Daffierou. Il y a le palais royal de Gourou où se trouve l'actuel Roi. Quand le Roi meurt, on l'enterre dans l'enceinte du palais royal. Le Roi a plusieurs femmes. En plus des femmes que le Roi a avant son intronisation, on lui en envoie d'autres. À chaque Gaani, le Roi a une nouvelle femme Gando. On considère comme légitimes les enfants du Roi qui sont nés avant le règne parce que ayant trop de femmes et ne pouvant les satisfaire toutes, il y a le personnel de la cour royale à savoir les palefreniers, les serviteurs, les soldats qui peuvent s'arroger le droit du Roi. Et en étant femme du Roi, on ne pourra donner cet enfant qu'au Roi alors qu'il est illégitime. Le premier enfant du règne du Roi s'appelle GonaYérima. Gona qui veut dire "peau", la peau sur laquelle le Roi s'assoit quand il veut siéger. Les premières femmes du Roi ont la priorité dans la cour royale.</p>
+        </div>
+    </div>
+    <script>
+        function showMore() {
+            var moreContent = document.getElementById("moreContent");
+            var button = document.querySelector(".button-link");
+            if (moreContent.style.display === "none") {
+                moreContent.style.display = "block";
+                button.textContent = "Voir moins";
+            } else {
+                moreContent.style.display = "none";
+                button.textContent = "Voir plus";
+            }
+        }
+        // Initialize the more-content section to be hidden
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("moreContent").style.display = "none";
+        });
+    </script>
+</body>
+</html>
